@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="context">
+        <div class="titulo-principal">
+            <h1>Escola Lógica sempre</h1>
+        </div>
+        <div class="sub-titulo">
+            <h2> Cadastrar Aluno </h2>
+        </div>
+        <div class="formulario">
+            <label for="cod">Digite o código do aluno: </label>
+            <input type="text" id="cod" placeholder="Digite seu código">
+
+            <label for="nome">Digite o seu nome: </label>
+            <input type="text" id="nome" placeholder="Digite seu Nome">
+
+            <label for="sobrenome">Digite o seu sobrenome: </label>
+            <input type="text" id="sobrenome" placeholder="Digite seu Sobrenome">
+
+            <label for="email">Digite o seu Email: </label>
+            <input type="text" id="email" placeholder="Digite seu email">
+
+            <label for="n1">Digite sua primeira nota: </label>
+            <input type="text" id="n1" placeholder="Digite nota 1">
+
+            <label for="n2">Digite sua segunda nota: </label>
+            <input type="text" id="n2" placeholder="Digite nota 2">
+
+            <label for="n3">Digite sua terceira nota: </label>
+            <input type="text" id="n3" placeholder="Digite nota 3">
+        </div>
+        <div class="botoes-selected">
+            <input type="radio" name="grupo_opcoes" value="true" checked> <span>Ativo</span>
+            <input type="radio" name="grupo_opcoes" value="false"> <span>Inativo</span>
+        </div>
+        <div class="cadastrar">
+            <button class="button-cadastrar" onclick="salvarDados()"><span>Cadastrar</span></button>
+        </div>
+        <div class="sub-titulo">
+            <h2> Lista de Alunos Cadastrados </h2>
+        </div>
+        <div class="tabela-alunos">
+            <table id="tabelaValores">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>Email</th>
+                        <th>Notas</th>
+                        <th>Média</th>
+                        <th>Ativo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os dados da tabela serão preenchidos aqui com JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        <div class="botoes-filtragens">
+            <button onclick="listaDeAlunos()">Ver lista Completa</button>
+
+            <button onclick="listaAtivos()">Alunos Ativos</button>
+
+            <button onclick="listaInativos()">Alunos Inativos</button>
+
+            <button onclick="mediaEsperada()">Media esperada</button>
+
+            <button onclick="mediaNaoEsperada()">Abaixo da média</button>
+
+        </div>
+        <div class="inputs-botoes">
+            <input type="text" id="codigoParaRemover" placeholder="Código para remover">
+
+            <button onclick="removerAluno()">Remover</button>
+
+            <input type="text" id="codigoPesquisa" placeholder="Código para buscar">
+
+            <button onclick="pesquisarAluno()">Buscar</button>
+
+            <input type="text" id="codigoDesativa" placeholder="Código para desativar">
+
+            <button onclick="desativarAluno()">Desativar</button>
+        </div>
+    </div>
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul class="circles2">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
